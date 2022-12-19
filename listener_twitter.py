@@ -27,7 +27,7 @@ class GetTweets(StreamingClient):
     def on_tweet(self, tweet: Tweet):
         print(tweet.text)
         print('='*50)
-        conn.send(tweet.text.encode('latin1', 'ignore'))
+        conn.send(tweet.text.encode('utf-8', 'ignore'))
 
 printer = GetTweets(AUTH_TOKEN)
 printer.add_rules(StreamRule(KEYWORD))
