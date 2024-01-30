@@ -8,3 +8,4 @@
 ## Run
  - Execute listener: `python3 listener_twitter.py`
  - In another terminal, run the client: `python3 client_csv.py` or `python3 client_console.py`
+ 
